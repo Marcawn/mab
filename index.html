@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<title>mab décoration</title>
+
+	<link href="https://fonts.googleapis.com/css?family=Cutive|Cutive+Mono|Josefin+Sans|Roboto:100,300,400,500,700" rel="stylesheet">
+
+  	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/css/materialize.min.css">
+  	<!--<link rel="stylesheet" type="text/css" href="css/sass/materialize.css">-->
+  	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+  	<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+  	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/js/materialize.min.js"></script>
+</head>
+<body>
+
+	<div id="navbar-container">
+		<div id="navbar">
+			<a href=""><h1 id="logo">mab<span class="font-pink">.</span></h1></a>
+			<ul>
+				<a href="#about"><li>A PROPOS</li></a>
+				<a href="#gallery"><li>GALERIE</li></a>
+				<a href="#contact"><li>CONTACT</li></a>
+			</ul>	
+		</div>
+	</div>
+
+	<div id="header" class="space-bottom space-top">
+
+	</div>
+
+	<div id="about" class="container">
+		<div class="row">
+			<h2>A PROPOS</h2>
+	      	<div class="col s4 no-padding">
+	      		<img class="img" src="img/portrait.jpg">
+	      	</div>
+	      	<div class="col s8 padding">
+	      		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	      		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+	      		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+	      		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+	      		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+	      		proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
+	      		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	      		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+	      		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+	      		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+	      		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+	      		proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
+	      	</div>
+    	</div>
+	</div>
+
+	<div id="gallery" class="space-top space-bottom">
+
+	</div>
+
+	<div id="contact" class="container">
+		<div class="row">
+			<h2>CONTACT</h2>
+			<form class="col s6 no-padding">
+		     	<div class="row">
+			        <div class="input-field col s6">
+			          	<input id="first_name" type="text" class="validate">
+			          	<label for="first_name">Nom</label>
+			        </div>
+			        <div class="input-field col s6">
+			          	<input id="last_name" type="text" class="validate">
+			          	<label for="last_name">Email</label>
+			        </div>
+		      	</div>
+		      	<div class="row">
+		        	<div class="input-field col s12">
+		          		<textarea id="textarea1" class="materialize-textarea"></textarea>
+          				<label for="textarea1">Message</label>
+		        	</div>
+		      	</div>
+		    </form>
+		    <div class="col s6 padding">
+		    	<p>Adresse - Tel - Horaires</p>
+		    </div>
+		</div>
+	</div>
+</body>
+</html>
+
+
+<script type="text/javascript">
+
+	/* Shrink navbar on scroll */
+	$(window).scroll(function() {
+	  if ($(document).scrollTop() > 50) {
+	    $('#navbar-container').addClass('shrink');
+	    $('#logo').addClass('small');
+	  } else {
+	    $('#navbar-container').removeClass('shrink');
+	    $('#logo').removeClass('small');
+	  }
+	});
+
+</script>
